@@ -1,20 +1,35 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.8)
+    imagemagick-identify (0.0.1)
+    json (1.8.3)
+    mime-types (1.25.1)
+    mini_magick (4.3.6)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    rest-client (1.6.9)
+      mime-types (~> 1.16)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     tilt (2.0.1)
+    unirest (1.1.2)
+      addressable (~> 2.3.5)
+      json (~> 1.8.1)
+      rest-client (~> 1.6.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  imagemagick-identify (~> 0.0.1)
+  json (~> 1.8, >= 1.8.3)
+  mini_magick (~> 4.3, >= 4.3.6)
   sinatra
+  unirest
 
 BUNDLED WITH
    1.10.6
