@@ -21,8 +21,21 @@ post '/' do
 	       		image: params['user_image'][:tempfile]				                        
 	        }
 
-	 body =  response.body
-	 url = body['results'][0]['item']['url']
+	# if body == response
+
+		body = response.body
+	 
+	 	url = body['results'][0]['item']['url']
+
+	# else
+
+	# 	body = response.body
+
+	# 	url = body['error']['code']
+
+	# 	url = body['error']['message']
+
+	# end
 
 	 redirect url
 
